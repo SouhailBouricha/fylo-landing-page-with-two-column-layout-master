@@ -6,6 +6,8 @@
 
 Thanks for checking out this front-end coding challenge.
 
+If you want to try a live show [click here](https://confident-hugle-172fc3.netlify.app/) 😁
+
 [Frontend Mentor](https://www.frontendmentor.io) challenges allow you to improve your skills in a real-life workflow.
 
 **To do this challenge, you need a basic understanding of HTML and CSS.**
