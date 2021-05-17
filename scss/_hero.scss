@@ -1,0 +1,125 @@
+.main {
+  &_hero {
+    &_con {
+      width: 91.6%;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 35rem;
+      @media screen and (max-width: 1066px) {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+      }
+      &_left {
+        width: 55%;
+        @media screen and (max-width: 1066px) {
+          width: auto;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+        }
+        &_head {
+          font-size: 3.2rem;
+          font-family: $Raleway;
+          font-weight: 700;
+          color: $Very-Dark-Blue;
+          line-height: 1.6;
+          margin-bottom: 3.6rem;
+          margin-top: 5.6rem;
+          @media screen and (max-width: 436px) {
+            font-size: 2.7rem;
+          }
+          @media screen and (max-width: 374px) {
+            font-size: 2rem;
+          }
+        }
+        &_para {
+          font-size: 1.8rem;
+          font-family: $Open-Sans;
+          font-weight: 400;
+          color: $Desaturated-Blue;
+          line-height: 1.4;
+          margin-bottom: 3.2rem;
+          @media screen and (max-width: 436px) {
+            font-size: 1.5rem;
+          }
+        }
+        &_form {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          @media screen and (max-width: 1066px) {
+            margin-bottom: 10rem;
+          }
+          @media screen and (max-width: 587px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            justify-content: center;
+          }
+
+          &_email {
+            &::placeholder {
+              font-size: 1.2rem;
+              color: $Ligt-Gray;
+            }
+            padding: 2rem 2rem;
+            width: 32.1rem;
+            outline: none;
+            height: 4.5rem;
+            margin-right: 0.8rem;
+            font-family: $Raleway;
+            font-size: 1.5rem;
+            @media screen and (max-width: 587px) {
+              margin-bottom: 3.2rem;
+              width: 80%;
+              margin-right: 0rem;
+            }
+            @media screen and (max-width: 350px) {
+              width: 90%;
+            }
+          }
+          &_btn {
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-family: $Raleway;
+            font-weight: 700;
+            color: $Waith;
+            background-color: $Bright-Blue;
+            border-radius: 3px;
+            outline: none;
+            padding: 1.55rem 6.7rem;
+            margin-left: 0.8rem;
+            transition: all 0.2s ease-in-out;
+            &:hover {
+              background-color: $Light-Bright-Blue;
+            }
+            @media screen and (max-width: 587px) {
+              width: 80%;
+              margin-left: 0rem;
+            }
+            @media screen and (max-width: 350px) {
+              width: 90%;
+            }
+          }
+        }
+      }
+      &_right {
+        width: 45%;
+        text-align: right;
+        @media screen and (max-width: 1066px) {
+          width: auto;
+        }
+        &_img {
+          max-width: 63.2rem;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

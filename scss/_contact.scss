@@ -1,0 +1,101 @@
+.main {
+  &_contact {
+    background-color: $Desaturated-Blue;
+    &_con {
+      width: 91.6%;
+      margin: auto;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      padding-top: 11rem;
+      padding-bottom: 9.1rem;
+      @media screen and(max-width:1066px) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+      &_left {
+        &_head {
+          font-size: 2.5rem;
+          font-family: $Raleway;
+          color: $Waith;
+          margin-bottom: 2.9rem;
+        }
+        &_sub {
+          font-size: 1.6rem;
+          color: $Ligt-Gray;
+          font-family: $Open-Sans;
+          width: 40%;
+          line-height: 1.4;
+          @media screen and(max-width:1528px) {
+            width: 50%;
+          }
+          @media screen and(max-width:1391px) {
+            width: 60%;
+          }
+          @media screen and(max-width:1246px) {
+            width: 70%;
+          }
+          @media screen and(max-width:1144px) {
+            width: 80%;
+          }
+          @media screen and(max-width:1066px) {
+            width: 100%;
+            margin-bottom: 5.6rem;
+          }
+        }
+      }
+      &_right {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        @media screen and(max-width:1066px) {
+          width: 100%;
+          align-items: center;
+        }
+        &_email {
+          &::placeholder {
+            font-size: 1.2rem;
+            color: $Ligt-Gray;
+          }
+          padding: 2rem 2rem;
+          width: 48.2rem;
+          outline: none;
+          height: 4.5rem;
+          font-family: $Raleway;
+          font-size: 1.5rem;
+          margin-bottom: 1.5rem;
+          @media screen and(max-width:1066px) {
+            width: 70%;
+          }
+          @media screen and(max-width:600px) {
+            width: 100%;
+          }
+        }
+        &_link {
+          text-decoration: none;
+          font-size: 1.2rem;
+          font-family: $Raleway;
+          font-weight: 700;
+          color: $Waith;
+          background-color: $Bright-Blue;
+          border-radius: 3px;
+          outline: none;
+          padding: 1.55rem 4.25rem;
+          display: inline-block;
+          transition: all 0.2s ease-in-out;
+          &:hover {
+            background-color: $Light-Bright-Blue;
+          }
+          @media screen and(max-width:1066px) {
+            width: 70%;
+          }
+          @media screen and(max-width:600px) {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,151 @@
+.main {
+  &_stay {
+    &_con {
+      width: 91.6%;
+      margin: auto;
+      display: flex;
+      margin-bottom: 10rem;
+      align-items: center;
+      @media screen and (max-width: 1066px) {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+      }
+      &_left {
+        width: 50%;
+        @media screen and (max-width: 1066px) {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+        }
+        &_head {
+          font-size: 3.2rem;
+          font-family: $Raleway;
+          font-weight: 700;
+          color: $Very-Dark-Blue;
+          line-height: 1.6;
+          margin-bottom: 5rem;
+          // margin-top: 5.6rem;
+          @media screen and (max-width: 436px) {
+            font-size: 2.7rem;
+          }
+          @media screen and (max-width: 374px) {
+            font-size: 2rem;
+          }
+        }
+        &_para1 {
+          font-size: 1.8rem;
+          font-family: $Open-Sans;
+          font-weight: 400;
+          color: $Very-Dark-Blue;
+          line-height: 1.4;
+          margin-bottom: 2.5rem;
+          @media screen and (max-width: 436px) {
+            font-size: 1.5rem;
+          }
+        }
+        &_para2 {
+          font-size: 1.8rem;
+          font-family: $Open-Sans;
+          font-weight: 400;
+          color: $Very-Dark-Blue;
+          line-height: 1.4;
+          margin-bottom: 2.8rem;
+          @media screen and (max-width: 436px) {
+            font-size: 1.5rem;
+          }
+        }
+        &_fylo {
+          display: flex;
+          align-items: center;
+          font-size: 1.5rem;
+          font-family: $Raleway;
+          font-size: 400;
+          color: $Moderat-Cyan;
+          padding-bottom: 0.9rem;
+          display: inline-block;
+          border-bottom: 1px solid $Moderat-Cyan;
+          margin-bottom: 4rem;
+          &_im {
+            margin-left: 0.9rem;
+            transform: translateY(3px);
+          }
+        }
+        &_form {
+          padding: 2.4rem 3.4rem;
+          max-width: 35.7rem;
+          box-shadow: 0.4rem 0.4rem 1rem rgb(191, 191, 191),
+            -0.4rem -0.4rem 1rem rgb(191, 191, 191);
+          @media screen and (max-width: 1066px) {
+            text-align: left;
+          }
+          @media screen and (max-width: 438px) {
+            width: 90%;
+          }
+          @media screen and (max-width: 358px) {
+            padding: 2.4rem 3rem;
+          }
+          @media screen and (max-width: 348px) {
+            padding: 2.4rem 2.5rem;
+          }
+          @media screen and (max-width: 336px) {
+            padding: 2.4rem 2rem;
+          }
+
+          &_quotes {
+            margin-bottom: 2rem;
+          }
+          &_para3 {
+            font-size: 1.2rem;
+            font-family: $Open-Sans;
+            color: $Very-Dark-Blue;
+            line-height: 1.6;
+            margin-bottom: 2.2rem;
+          }
+          &_profile {
+            display: flex;
+            &_ava {
+              width: 3rem;
+              border-radius: 50%;
+              margin-right: 0.9rem;
+            }
+            &_bio {
+              display: flex;
+              flex-direction: column;
+              justify-content: space-around;
+              &_head {
+                font-size: 1rem;
+                font-family: $Raleway;
+                font-family: 700;
+                color: $Very-Dark-Blue;
+              }
+              &_sub {
+                font-size: 0.7rem;
+                font-family: $Open-Sans;
+                color: $Very-Dark-Blue;
+              }
+            }
+          }
+        }
+      }
+      &_right {
+        width: 50%;
+        text-align: right;
+        @media screen and (max-width: 1066px) {
+          width: 100%;
+          text-align: center;
+          margin-bottom: 10rem;
+        }
+        &_img {
+          max-width: 54.4rem;
+          @media screen and (max-width: 1066px) {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+.header {
+  &_con {
+    width: 91.6%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 6.6rem;
+    margin-bottom: 9.3rem;
+    &_left {
+      @media screen and (max-width: 600px) {
+        width: 20%;
+      }
+      @media screen and (max-width: 470px) {
+        width: 25%;
+      }
+      &_img {
+        @media screen and (max-width: 600px) {
+          width: 100%;
+        }
+      }
+    }
+    &_right {
+      &_list {
+        display: flex;
+        &_li {
+          list-style: none;
+          &:not(:first-child) {
+            margin-left: 5.8rem;
+            @media screen and (max-width: 470px) {
+              margin-left: 2.9rem;
+            }
+            @media screen and (max-width: 350px) {
+              margin-left: 2rem;
+            }
+            @media screen and (max-width: 350px) {
+              margin-left: 1.5rem;
+            }
+          }
+          &_link {
+            text-decoration: none;
+            font-size: 1.4rem;
+            font-family: $Raleway;
+            color: $Desaturated-Blue;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}

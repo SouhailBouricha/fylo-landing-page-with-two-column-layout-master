@@ -1,0 +1,97 @@
+.footer {
+  background-color: $Very-Dark-Blue;
+  &_con {
+    width: 91.6%;
+    margin: auto;
+    padding-top: 10.1rem;
+    padding-bottom: 7.6rem;
+    @media screen and (max-width: 750px) {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: left;
+    }
+    &_logo {
+      margin-bottom: 2.5rem;
+      @media screen and (max-width: 750px) {
+        margin-bottom: 8.6rem;
+      }
+    }
+    &_bot {
+      display: flex;
+      justify-content: space-between;
+      @media screen and (max-width: 750px) {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+      }
+      &_flist {
+        &_li {
+          list-style: none;
+          display: flex;
+          align-items: center;
+          font-size: 1.6rem;
+          font-family: $Open-Sans;
+          font-weight: 400;
+          color: $Waith;
+          @media screen and (max-width: 750px) {
+            margin-bottom: 12.9rem;
+          }
+          &:not(:last-child) {
+            margin-bottom: 2.5rem;
+            @media screen and (max-width: 750px) {
+              margin-bottom: 1.3rem;
+            }
+          }
+          &_img {
+            margin-right: 1.4rem;
+          }
+        }
+      }
+      &_list {
+        &_li {
+          list-style: none;
+          @media screen and (max-width: 750px) {
+            margin-bottom: 11.5rem;
+          }
+          &:not(:last-child) {
+            margin-bottom: 2.5rem;
+            @media screen and (max-width: 750px) {
+              margin-bottom: 5rem;
+            }
+          }
+          &_link {
+            font-size: 1.5rem;
+            color: $Waith;
+            text-decoration: none;
+            font-family: $Open-Sans;
+            transition: all 0.1s ease-in-out;
+            &:hover {
+              color: $Bright-Blue;
+            }
+          }
+        }
+      }
+      &_licon {
+        display: flex;
+        align-items: flex-start;
+        @media screen and (max-width: 750px) {
+          display: block;
+          display: flex;
+          margin: auto;
+        }
+        &_li {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 1.2rem;
+          border: 1px solid $Waith;
+          border-radius: 50%;
+          &:not(:first-child) {
+            margin-left: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+}
